@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Google Search</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div style="text-align: right; padding: 10px;">
+        <a href="image.html" style="color: #757575; text-decoration: none;">Images</a>
+        <a href="advanced.html" style="color: #757575; text-decoration: none; margin-left: 10px;">Advanced Search</a>
+    </div>
+    <div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+        <div class="search-container">
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo" style="margin-bottom: 50px;">
+            <form action="https://www.google.com/search" method="GET">
+                <input type="text" name="q" class="search-bar" placeholder="Search Google...">
+                <div>
+                    <input type="submit" value="Google Search" class="search-button">
+                    <input type="submit" name="btnI" value="I'm Feeling Lucky" class="lucky-button">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
