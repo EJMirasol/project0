@@ -9,6 +9,30 @@
             margin: 0;
             padding: 0;
         }
+        #image-search,#advanced-search{
+            color: #757575; 
+            text-decoration: none;
+        }
+        #links-style{
+            color: #757575;
+            text-decoration: none; 
+            margin-left: 10px;
+        }
+        #google-logo{
+            
+            margin-bottom: 50px;
+        }       
+        .links-container{
+            text-align: right; 
+            padding: 10px;
+        }
+        
+        .display-container{
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh;
+        }
         .search-container {
             display: flex;
             flex-direction: column;
@@ -83,13 +107,13 @@
     </style>
 </head>
 <body>
-    <div style="text-align: right; padding: 10px;">
-        <a href="#image" id="google-search" style="color: #757575; text-decoration: none;">Images</a>
-        <a href="#advanced" style="color: #757575; text-decoration: none; margin-left: 10px;">Advanced Search</a>
+    <div class="links-container">
+        <a href="#image-search" id="google-search">Images</a>
+        <a href="#advanced-search" id="links-style">Advanced Search</a>
     </div>
-    <div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+    <div class="display-container">
         <div class="search-container">
-            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo" style="margin-bottom: 50px;">
+            <img id="#google-logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
             <form action="https://www.google.com/search" method="GET">
                 <input type="text" name="q" class="search-bar" placeholder="Search Google...">
                 <div>
@@ -99,13 +123,13 @@
             </form>
         </div>
     </div>
-    <div style="text-align: right; padding: 10px;">
-        <a href="#google-search" id="image" style="color: #757575; text-decoration: none;">Google Search</a>
-        <a href="#advanced" style="color: #757575; text-decoration: none; margin-left: 10px;">Advanced Search</a>
+    <div class="links-container">
+        <a href="#google-search" id="image-search">Google Search</a>
+        <a href="#advanced-search" id="links-style">Advanced Search</a>
     </div>
-    <div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+    <div class="display-container">
         <div class="search-container">
-            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo" style="margin-bottom: 50px;">
+            <img id="#google-logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
             <form action="https://www.google.com/search" method="GET">
                 <label for="search">Search:</label>
                 <input type="text" name="tbm" value="isch" hidden>
@@ -114,11 +138,11 @@
             </form>
         </div>
     </div>
-    <div style="text-align: right; padding: 10px;">
-        <a href="#google-search" id="advanced" style="color: #757575; text-decoration: none;">Google Search</a>
-        <a href="#image" style="color: #757575; text-decoration: none; margin-left: 10px;">Images</a>
+    <div class="links-container">
+        <a href="#google-search" id="advanced-search">Google Search</a>
+        <a href="#image-search" id="links-style">Images</a>
     </div>
-    <div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+    <div class="display-container">
         <div class="search-container">
             <form action="https://www.google.com/search" method="GET">
                 <label for="search">All these words:</label>
